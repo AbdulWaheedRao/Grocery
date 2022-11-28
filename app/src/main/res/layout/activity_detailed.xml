@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".DetailedActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:background="@color/primaryColor"
+        >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbtitle"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_shape"
+        android:layout_margin="5dp"
+        app:title="Detail Product"
+        />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivpic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/vegetable"
+        app:riv_border_color="#333333"
+        app:riv_corner_radius="14dp" />
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.6" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="10">
+        <ImageView
+            android:id="@+id/ivplus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <TextView
+            android:id="@+id/tvquantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivsub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_remove_circle_outline_24" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btncart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

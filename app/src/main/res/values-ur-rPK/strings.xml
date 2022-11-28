@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">گروسری</string>
+    <string name="OpenDrawer">نیویگیشن دراز کھولیں۔</string>
+    <string name="CloseDrawer">نیویگیشن دراز بند کریں۔</string>
+    <string name="language">گروسر ایپ میں خوش آمدید</string>
+    <string name="Detail">گروسری، پھل سبزی، گوشت سمیت 5000 مصنوعات آپ کے دروازے پر پہنچانا.</string>
+    <string name="Conncet">آئیے جڑتے ہیں۔</string>
+    <string name="login">لاگ ان کریں</string>
+    <string name="selected_language">اردو</string>
+    <string name="title_activity_google_maps">گوگل میپس کی سرگرمی</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">ہیلو خالی ٹکڑا</string>
+
+</resources>

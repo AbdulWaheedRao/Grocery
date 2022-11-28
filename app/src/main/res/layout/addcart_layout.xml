@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:background="@drawable/tv_shape"
+        app:layout_constraintHeight_percent="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1">
+
+
+        <TextView
+            android:id="@+id/productn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="ProductName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toLeftOf="@id/constraint"
+          app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/ProductName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="ProductName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toRightOf="@id/productn"
+            app:layout_constraintRight_toRightOf="@id/constraint"
+           app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/productp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="ProductPrice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productn"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/ProductPrice"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="ProductPrice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toRightOf="@id/productp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ProductName"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/currentD"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="CurrentDate"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productp"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/CurrentDate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="CurrentDate"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toRightOf="@id/currentD"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ProductPrice"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/currentT"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="CurrentTime"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/currentD"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/CurrentTime"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="CurrentDate"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toRightOf="@id/currentT"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CurrentDate"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/TotalQ"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Totalquantity"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/currentT"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/TotalQuantity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Totalquantity"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toRightOf="@id/TotalQ"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CurrentTime"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/TotalP"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="TotalPrice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TotalQ"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/TotalPrice"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Totalquantity"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintLeft_toRightOf="@id/TotalP"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TotalQuantity"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/ivdelete"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintWidth_percent="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
